@@ -1,0 +1,6 @@
+{
+    "require": {
+        "endroid/qr-code": "^3.7",
+        "symfony/polyfill-iconv": "^1.28"
+    }
+}

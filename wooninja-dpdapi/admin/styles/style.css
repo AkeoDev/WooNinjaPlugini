@@ -1,0 +1,39 @@
+
+.invalid-licence {
+	display: inline-block;
+	background: #e74c3c;
+	color: #FFF;
+	padding: 3px 8px;
+	border-radius: 5px;
+	font-size: 11px;
+}
+
+.warning-licence {
+	display: inline-block;
+	background: #e67e22;
+	color: #FFF;
+	padding: 3px 8px;
+	border-radius: 5px;
+	font-size: 11px;
+}
+
+.valid-licence {
+	display: inline-block;
+	background: #2ecc71;
+	color: #FFF;
+	padding: 3px 8px;
+	border-radius: 5px;
+	font-size: 11px;
+}
+
+.buy-licence {
+	display: inline-block;
+	background: #3498db;
+	color: #FFF;
+	padding: 3px 8px;
+	border-radius: 5px;
+	font-size: 11px;
+}
+.buy-licence a {
+	color: #FFF;
+}

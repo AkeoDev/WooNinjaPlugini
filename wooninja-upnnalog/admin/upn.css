@@ -1,0 +1,220 @@
+.div {
+	font-family: "Arial";
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+  background-color: #79A85D;
+}
+/* Checkbox container */
+/* Checkbox container */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 45px;
+    margin-right: 10px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* Checkbox background */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: transparent;
+    -webkit-transition: background-color 0.4s;
+    transition: background-color 0.4s;
+  }
+  
+  /* Checked state styles */
+  input:checked + .slider {
+      border: 2px solid #79A85D;;
+    border-color: #79A85D;
+  }
+  
+  /* Focus state styles */
+  input:focus + .slider {
+    box-shadow: 0 0 1px #79A85D;;
+  }
+  
+  /* Add hover effect */
+  .switch:hover .slider {
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Add transition to hover effect */
+  .switch .slider {
+    -webkit-transition: box-shadow 0.4s;
+    transition: box-shadow 0.4s;
+  }
+  
+
+/* UPN style */
+
+#upn-ikona {
+    background-color: #fff;
+    border: 1px solid beige;
+    display: inline-block;
+    width:63px;
+    height:30px;
+    position: relative;
+    vertical-align: text-bottom;
+    margin-left: 8px;
+  }
+  
+  #upn-ikona:after, #upn-ikona:before {
+    border-left: 1px solid beige;
+    content:' ';
+    position: absolute;
+    width:72%;
+    z-index: 2;
+    right: 0;
+  }
+  
+  #upn-ikona:after {height: 40%; right: 0px; background: #F8D6C7;  }
+  #upn-ikona:before {height: 60%; bottom: 0px; right: 0px; background: #FDEEB1;}
+  
+  .puscica_zgoraj {
+      margin-left: 3px;
+      height: 7px;
+      width: 6px;
+      background-color: #d6d6d6;
+      position: absolute;
+      top: 4px;
+      left: 2px;
+  }
+  
+  .puscica_spodaj { 
+      width: 0;
+      height: 0;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      border-top: 8px solid #d6d6d6;
+      position: absolute;
+      top: 11px;
+      left: 2px;
+  }
+  
+  .base {
+      width: 12px;
+      height: 2px;
+      background-color: #d6d6d6;
+      position: absolute;
+      bottom: 3px;
+      top: auto;
+      left: 2px;
+  }
+  
+  .ikona_wrapper:hover .puscica_zgoraj,
+  .ikona_wrapper:hover .base {
+      background-color: #a6a6a6;
+  }
+  
+  .ikona_wrapper:hover .puscica_spodaj {
+      border-top-color: #a6a6a6;
+  }
+  .upn_object {
+      display: none;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 10000;
+      background-color: rgba(0,0,0,0.55);
+  }
+  .upn_object > object {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      max-width: 787px;
+      display: block;
+      margin: auto;
+      max-height: 444px;
+  }
+  .ikona_wrapper {
+      cursor: pointer;
+  }
+  .upn_popup {
+      cursor: zoom-in;
+  }
+  .upn_object {
+      cursor: zoom-out;
+  }
+
+  #loader {
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    position: absolute;
+   /* left: 420px;*/
+   left: 50%;
+    top: 50%;
+/*    top:50%; */
+}
+.loadingspinner {
+    pointer-events: none;
+    width: 2.5em;
+    height: 2.5em;
+    border: 0.4em solid transparent;
+    border-color: #eee;
+    border-top-color: #79A85D;
+    border-radius: 50%;
+    animation: loadingspin 1s linear infinite;
+}
+.hide_settings {
+    display: none;
+}
+
+@keyframes loadingspin {
+    100% {
+            transform: rotate(360deg)
+    }
+}
+
+#form-table-upay,#form-table-upn {
+    position: relative;
+}
+.upn_overlay {
+    position: absolute;
+    opacity: 0.7;
+}
+
+
+
+.radio-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  border-bottom: 1px solid #ddd;
+}
+.radio-buttons [type="radio"] {
+  visibility: hidden;
+}
+.radio-option {
+  width: 50%;
+}
+
+.radio-input {
+  display: none;
+}
+
+.radio-label {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.radio-input:checked + .radio-label {
+  border-bottom: 2px solid green;
+  color: green;
+}

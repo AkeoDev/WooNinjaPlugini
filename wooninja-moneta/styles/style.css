@@ -1,0 +1,72 @@
+.awaiting-moneta {
+  font-family: WooCommerce;
+  speak: none;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  text-indent: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.awaiting-moneta:after {
+  font-family: WooCommerce;
+  speak: none;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  text-indent: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  content: "\e011";
+  color: purple;
+}
+
+.invalid-licence {
+	display: inline-block;
+	background: #e74c3c;
+	color: #FFF;
+	padding: 3px 8px;
+	border-radius: 5px;
+}
+
+.warning-licence {
+	display: inline-block;
+	background: #e67e22;
+	color: #FFF;
+	padding: 3px 8px;
+	border-radius: 5px;
+}
+
+.valid-licence {
+	display: inline-block;
+	background: #2ecc71;
+	color: #FFF;
+	padding: 3px 8px;
+	border-radius: 5px;
+}
+
+.buy-licence {
+	display: inline-block;
+	background: #3498db;
+	color: #FFF;
+	padding: 3px 8px;
+	border-radius: 5px;
+}
+.buy-licence a {
+	color: #FFF;
+}

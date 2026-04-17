@@ -1,0 +1,158 @@
+[
+  {
+    "id": "VPLPG",
+    "title": "Vplačnina po pogodbi",
+    "description": "Storitev, pri kateri poravna vplačnino za pošiljke s storitvijo Odkupnina pošiljatelj. V tem primeru se s pošiljateljem sklene posebna pogodba.",
+    "enable": 0
+  },
+  {
+    "id": "DOB",
+    "title": "Dobavnica",
+    "description": "Storitev, pri kateri se pošiljatelju vrne od naslovnika potrjena dobavnica.",
+    "enable": 0
+  },
+  {
+    "id": "DO10.URE",
+    "title": "Dostava do 10. ure",
+    "description": "Storitev, pri kateri lahko pošiljatelj izbere okvirni čas dostave v okviru ponudbe izvajalca.",
+    "enable": 1
+  },
+  {
+    "id": "PO16.URI",
+    "title": "Dostava po 16. uri",
+    "description": "Storitev, pri kateri lahko pošiljatelj izbere okvirni čas dostave v okviru ponudbe izvajalca.",
+    "enable": 1
+  },
+  {
+    "id": "PNP",
+    "title": "Prevzem na pošti",
+    "description": "Storitev, pri kateri lahko pošiljatelj izbere za naslovnika možnost prevzema pošiljke na pošti.",
+    "enable": 0
+  },
+  {
+    "id": "PR",
+    "title": "Pazljivejše ravnanje",
+    "description": "Storitev, pri kateri se s pošiljko ravna še posebej pazljivo.",
+    "enable": 1
+  },
+  {
+    "id": "ODK",
+    "title": "Odkupnina",
+    "description": "Storitev, pri kateri se vroči pošiljko naslovniku proti predhodnemu plačilu zneska odkupnine.",
+    "enable": 1
+  },
+  {
+    "id": "PPN",
+    "title": "Poštnino plača naslovnik",
+    "description": "Storitev, pri kateri poštnino plača naslovnik.",
+    "enable": 0
+  },
+  {
+    "id": "V",
+    "title": "Označena vrednost",
+    "description": "Storitev, pri kateri pošiljatelj označi vrednost pošiljke.",
+    "enable": 1
+  },
+  {
+    "id": "KLIC2",
+    "title": "Klic 2",
+    "description": "Storitev, pri kateri se pošiljka najprej poskuša vročiti z redno dostavo. Če pošiljke ni bilo mogoče vročili ob redni dostavi in je naslovnik ni dvignil v dveh dneh, se pokliče naslovnik in se dogovori brezplačna druga dostava ali prevzema pošiljke na pošti.",
+    "enable": 0
+  },
+  {
+    "id": "AR",
+    "title": "Povratnica",
+    "description": "Storitev, pri kateri naslovnik vročitev potrdi na posebnem obrazcu, ki se imenuje Povratnica – Advice of receipt. Povratnica se pošiljatelju pošiljke pošlje kot navadno pismo.",
+    "enable": 0
+  },
+  {
+    "id": "OS",
+    "title": "Osebna vročitev",
+    "description": "Storitev, pri kateri se pošiljka vroči osebno naslovniku.",
+    "enable": 0
+  },
+  {
+    "id": "A",
+    "title": "Prednostno",
+    "description": "Storitev, pri kateri ima pošiljka prednost pri prenosu (v mednarodnem prometu).",
+    "enable": 0
+  },
+  {
+    "id": "POD",
+    "title": "Podpis dokumentov",
+    "description": "Storitev, pri kateri se pošiljatelju vrne od naslovnika potrjen dokument, kot je npr. pogodba, aneks, naročilnica ipd.",
+    "enable": 0
+  },
+  {
+    "id": "1URALJ",
+    "title": "Dostava v 1 uri znotraj Ljubljane",
+    "description": "Storitev, pri kateri lahko pošiljatelj izbere okvirni čas dostave v okviru ponudbe izvajalca (samo Hitra pošta znotraj mest).",
+    "enable": 0
+  },
+  {
+    "id": "D.18-20.U",
+    "title": "Dostava med 18. in 20. uro",
+    "description": "Storitev, pri kateri lahko pošiljatelj izbere okvirni čas dostave v okviru ponudbe izvajalca (za naslovnike v Ljubljani).",
+    "enable": 1
+  },
+  {
+    "id": "eMAIL",
+    "title": "Obveščanje e-mail",
+    "description": "Storitev, pri kateri se naslovnik po e-pošti obvesti o prispetju pošiljke.",
+    "enable": 1
+  },
+  {
+    "id": "SMS",
+    "title": "Obveščanje SMS",
+    "description": "Storitev, pri kateri se naslovnik s SMS obvesti o prispetju pošiljke.",
+    "enable": 1
+  },
+  {
+    "id": "8DNI",
+    "title": "Vračanje po 8 dneh",
+    "description": "Storitev, pri kateri lahko pošiljatelj izbere, da se mu pošiljka v primeru nevročitve naslovniku vrne po osmih dneh.",
+    "enable": 1
+  },
+  {
+    "id": "OSB",
+    "title": "Odvoz starega blaga",
+    "description": "Storitev, pri kateri lahko pošiljatelj izbere, da ob dostavi pošiljke odpeljemo staro blago. V tem primeru s pošiljateljem sklenemo posebno pogodbo.",
+    "enable": 0
+  },
+  {
+    "id": "ORB",
+    "title": "Odvoz reklamiranega blaga",
+    "description": "Storitev, pri kateri lahko pošiljatelj izbere, da ob dostavi pošiljke odpeljemo reklamirano blago. V tem primeru s pošiljateljem sklenemo posebno pogodbo.",
+    "enable": 0
+  },
+  {
+    "id": "DVS",
+    "title": "Dostava z vnosom v stanovanje",
+    "description": "Storitev, pri kateri lahko pošiljatelj izbere možnost, da pošiljko prinesemo v stanovanje. V tem primeru s pošiljateljem sklenemo posebno pogodbo.",
+    "enable": 0
+  },
+  {
+    "id": "ZAV",
+    "title": "Zavarovanje vsebine",
+    "description": "Storitev, pri kateri lahko pošiljatelj, ki v priporočenem pismu za mednarodni promet pošilja blago in dokumente,  zavaruje vsebino v vrednosti do 100,00 EUR.",
+    "enable": 0
+  },
+  {
+    "id": "OSBDVS",
+    "title": "Odvoz starega blaga in dostava v stanovanje",
+    "description": "Storitev, pri kateri lahko pošiljatelj izbere možnost, da odpeljemo staro blago in pošiljko prinesemo v stanovanje. V tem primeru s pošiljateljem sklenemo posebno pogodbo.",
+    "enable": 0
+  },
+  {
+    "id": "ORBDVS",
+    "title": "Odvoz reklamiranega blaga in dostava v stanovanje",
+    "description": "Storitev, pri kateri lahko pošiljatelj izbere možnost, da odpeljemo reklamirano blago in pošiljko prinesemo v stanovanje. V tem primeru s pošiljateljem sklenemo posebno pogodbo.",
+    "enable": 0
+  },
+  {
+    "id": "ODKBN",
+    "title": "Odkupnina brez naloga",
+    "description": "Storitev, pri kateri se naslovniku vroči pošiljka proti predhodnemu plačilu zneska odkupnine. Pošiljatelj prejme nakazilo zneska odkupnine na TRR, ne da bi pošiljki priložil vplačilni dokument. V tem primeru s pošiljateljem sklenemo posebno pogodbo.",
+    "enable": 1
+  }
+]

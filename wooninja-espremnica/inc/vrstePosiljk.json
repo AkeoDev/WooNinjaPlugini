@@ -1,0 +1,194 @@
+[
+  {
+    "id": 101,
+    "title": "Poslovni paket – notranji",
+    "description": "",
+    "enable": 1
+  },
+  {
+    "id": 102,
+    "title": "Poslovni paket večjih dimenzij – notranji",
+    "description": "",
+    "enable": 1
+  },
+  {
+    "id": 103,
+    "title": "Mednarodni poslovni paket",
+    "description": "",
+    "enable": 0
+  },
+  {
+    "id": 104,
+    "title": "PPIN – notranji",
+    "description": "",
+    "enable": 0
+  },
+  {
+    "id": 105,
+    "title": "PPIN Hrvaška – mednarodni",
+    "description": "",
+    "enable": 0
+  },
+  {
+    "id": 106,
+    "title": "Paket dobavitelj",
+    "description": "",
+    "enable": 0
+  },
+  {
+    "id": 107,
+    "title": "Paket – mednarodni",
+    "description": "",
+    "enable": 0
+  },
+  {
+    "id": 108,
+    "title": "PG pošiljka na kos",
+    "description": "",
+    "enable": 0
+  },
+  {
+    "id": 109,
+    "title": "Mali poslovni paket do 500 g",
+    "description": "",
+    "enable": 0
+  },
+  {
+    "id": 201,
+    "title": "Paleta – notranji",
+    "description": "",
+    "enable": 0
+  },
+  {
+    "id": 202,
+    "title": "Mednarodna paleta Hrvaška – Zagreb",
+    "description": "",
+    "enable": 0
+  },
+  {
+    "id": 203,
+    "title": "Tovor",
+    "description": "",
+    "enable": 0
+  },
+  {
+    "id": 204,
+    "title": "Mednarodna paleta Hrvaška – ostalo",
+    "description": "",
+    "enable": 0
+  },
+  {
+    "id": 205,
+    "title": "Mednarodna paleta Hrvaška – otoki",
+    "description": "",
+    "enable": 0
+  },
+  {
+    "id": 301,
+    "title": "Priporočeno pismo – notranji",
+    "description": "",
+    "enable": 0
+  },
+  {
+    "id": 302,
+    "title": "Priporočeno pismo – mednarodni",
+    "description": "",
+    "enable": 0
+  },
+  {
+    "id": 303,
+    "title": "Vrednostno pismo – notranji",
+    "description": "",
+    "enable": 0
+  },
+  {
+    "id": 304,
+    "title": "Vrednostno pismo – mednarodni",
+    "description": "",
+    "enable": 0
+  },
+  {
+    "id": 305,
+    "title": "Standardno pismo – notranji",
+    "description": "",
+    "enable": 0
+  },
+  {
+    "id": 306,
+    "title": "Standardno pismo – mednarodni",
+    "description": "",
+    "enable": 0
+  },
+  {
+    "id": 307,
+    "title": "Navadno pismo – notranji",
+    "description": "",
+    "enable": 0
+  },
+  {
+    "id": 308,
+    "title": "Navadno pismo – mednarodni",
+    "description": "",
+    "enable": 0
+  },
+  {
+    "id": 309,
+    "title": "Tiskovina",
+    "description": "",
+    "enable": 0
+  },
+  {
+    "id": 310,
+    "title": "ZUP, ZKP – osebno",
+    "description": "",
+    "enable": 0
+  },
+  {
+    "id": 311,
+    "title": "Tiskovina – mednarodni",
+    "description": "",
+    "enable": 0
+  },
+  {
+    "id": 312,
+    "title": "ZKP – posredno, ZSReg / ZFPPIPP",
+    "description": "",
+    "enable": 0
+  },
+  {
+    "id": 313,
+    "title": "ZPP – osebno",
+    "description": "",
+    "enable": 0
+  },
+  {
+    "id": 314,
+    "title": "ZPP – posredno",
+    "description": "",
+    "enable": 0
+  },
+  {
+    "id": 401,
+    "title": "Hitra pošta po Sloveniji",
+    "description": "",
+    "enable": 0
+  },
+  {
+    "id": 402,
+    "title": "Hitra pošta znotraj mest",
+    "description": "",
+    "enable": 0
+  },
+  {
+    "id": 403,
+    "title": "Hitra pošta EMS paket",
+    "description": "",
+    "enable": 0
+  },
+  {
+    "id": 404,
+    "title": "Hitra pošta EMS pismo",
+    "description": "",
+    "enable": 0
+  }
+]

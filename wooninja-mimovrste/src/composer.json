@@ -1,0 +1,5 @@
+{
+    "require": {
+        "mallgroup/mpapi-client": "^5.0"
+    }
+}
