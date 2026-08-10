@@ -363,7 +363,9 @@ function woocommerce_gateway_nestpay_init() {
 
         public function get_payment_method_script_handles() {
 
-            $asset_path   = plugin_dir_path( __DIR__ ) . 'build/index.asset.php';
+            // __FILE__, not __DIR__: this class lives in the plugin's root file,
+            // so plugin_dir_path( __DIR__ ) would resolve to wp-content/plugins/.
+            $asset_path   = plugin_dir_path( __FILE__ ) . 'build/index.asset.php';
             $version      = null;
             $dependencies = array();
             if( file_exists( $asset_path ) ) {
@@ -373,8 +375,8 @@ function woocommerce_gateway_nestpay_init() {
             }
 
             wp_register_script( 
-                'wc-nestpay-blocks-integration', 
-                plugin_dir_url( __DIR__ ) . 'build/index.js', 
+                'wc-nestpay-blocks-integration',
+                plugin_dir_url( __FILE__ ) . 'build/index.js',
                 $dependencies, 
                 $version, 
                 true 
@@ -926,6 +928,14 @@ function nestpay_cart_checkout_blocks_compatibility() {
 				'cart_checkout_blocks',
 				__FILE__,
 				false // true (compatible, default) or false (not compatible)
+			);
+
+        // HPOS: this plugin reads and writes orders through the CRUD layer only
+        // (wc_get_order / wc_get_orders / update_meta_data), so it is compatible.
+        \Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility(
+				'custom_order_tables',
+				__FILE__,
+				true
 			);
     }
 		
