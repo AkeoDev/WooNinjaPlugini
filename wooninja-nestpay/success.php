@@ -4,8 +4,9 @@ $settings = new NestPay();
 $return_oid = isset( $_POST["ReturnOid"] ) ? absint( $_POST["ReturnOid"] ) : 0;
 $order = wc_get_order( $return_oid );
 
-
-$oldurl = $order->get_checkout_order_received_url( );
+// wc_get_order() returns false for an unknown/missing ReturnOid - never call
+// methods on it, or the bank's return lands the customer on a 500.
+$oldurl = $order ? $order->get_checkout_order_received_url() : get_permalink( wc_get_page_id( 'shop' ) );
 $lang = $order ? $order->get_meta( 'wpml_language' ) : '';
 
 if(isset($lang) ) {
@@ -99,10 +100,14 @@ if(isset($lang) ) {
             if ( isset( $_POST["Response"] ) && sanitize_text_field( $_POST["Response"] ) == "Approved" )
             {
               
-              $order->update_status( $settings->completed_status , __( 'Transaction done, awaiting delivery!', 'woocommerce' ));
+              if ( $order ) {
+                $order->update_status( $settings->completed_status , __( 'Transaction done, awaiting delivery!', 'woocommerce' ));
+              }
               add_filter( 'wp_mail_content_type', 'smset_html_content_type' );
-              if ( ! function_exists( "smset_html_content_type" ) ) { function smset_html_content_type() {
-                  return 'text/html'; } }
+              if ( ! function_exists( "smset_html_content_type" ) ) {
+                  function smset_html_content_type() {
+                      return 'text/html';
+                  }
               }
 
               $to      = get_bloginfo('admin_email');

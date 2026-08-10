@@ -3,7 +3,10 @@ require_once( dirname( __FILE__ ) . '/../../../wp-load.php' );
 $settings = new NestPay();
 $return_oid = isset( $_POST["ReturnOid"] ) ? absint( $_POST["ReturnOid"] ) : 0;
 $order = wc_get_order( $return_oid );
-$order->update_status( $settings->failed_status, __( 'Transaction failed!', 'woocommerce' ) );
+// wc_get_order() returns false for an unknown/missing ReturnOid.
+if ( $order ) {
+	$order->update_status( $settings->failed_status, __( 'Transaction failed!', 'woocommerce' ) );
+}
 
 $cancelUrl = get_permalink( wc_get_page_id( 'checkout' ) );
 $lang = $order ? $order->get_meta( 'wpml_language' ) : '';
@@ -15,8 +18,10 @@ if(isset($lang) ) {
 if ($settings->failed_transaction == "yes") {
 
     add_filter( 'wp_mail_content_type', 'smset_html_content_type' );
-    if ( ! function_exists( "smset_html_content_type" ) ) { function smset_html_content_type() {
-        return 'text/html'; } }
+    if ( ! function_exists( "smset_html_content_type" ) ) {
+        function smset_html_content_type() {
+            return 'text/html';
+        }
     }
 
     $to      = get_bloginfo('admin_email');
