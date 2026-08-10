@@ -29,3 +29,5 @@ debug.log
 # Package lock files
 package-lock.json
 composer.lock
+dist/
+.DS_Store
