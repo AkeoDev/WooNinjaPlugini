@@ -1,10 +1,14 @@
-
+<?php
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+?>
 <div id="poststuff">
     <div id="post-body" class="metabox-holder columns">
     <h1>Dokumentacija</h1>
     <hr>
-    <h2 style="padding-left: 0px;">Licenca</h2>
-        <p>Za delovanje vtičnika je potrebno imeti aktivno licenco. Vtičnik lahko aktivirate <a href="options-general.php?page=lowestPrice-options-licenca"> <?= __( 'tukaj' ) ;?></a> in potrebno je imeti aktiviran Woocmmerce vtičnik.</p>
+    <h2 style="padding-left: 0px;">Zahteve</h2>
+        <p>Za delovanje vtičnika je potrebno imeti aktiviran Woocommerce vtičnik.</p>
         <hr>
         <h2 style="padding-left: 0px;">Delovanja vtičnika</h2>
         <p><b>Vtičnik omogoča:</b></p>
