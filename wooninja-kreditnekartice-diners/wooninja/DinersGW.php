@@ -7,6 +7,10 @@
 
 namespace WooNinja;
 
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
 class DinersGW {
 	private $xml;
 	private $result;
@@ -134,9 +138,14 @@ class DinersGW {
 
 		$debit->addChild("amount",$data['amount']);
 		$debit->addChild("currency",$data['currency']);
-		$debit->addChild("successUrl",get_site_url(null,"/wp-content/plugins/woo-kreditnekartice-diners/bankart/return.php?id=" . $data['uniqid']));	
-		$debit->addChild("cancelUrl",get_site_url(null,"/wp-content/plugins/woo-kreditnekartice-diners/bankart/return.php?id=" . $data['uniqid']));
-		$debit->addChild("callbackUrl",get_site_url(null,"/wp-content/plugins/woo-kreditnekartice-diners/bankart/postback.php"));
+
+		// Derive from the plugin's own location so renaming the plugin folder
+		// can never orphan the bank's return/callback URLs.
+		$plugin_url = plugin_dir_url( __DIR__ );
+
+		$debit->addChild("successUrl",$plugin_url . "bankart/return.php?id=" . $data['uniqid']);
+		$debit->addChild("cancelUrl",$plugin_url . "bankart/return.php?id=" . $data['uniqid']);
+		$debit->addChild("callbackUrl",$plugin_url . "bankart/postback.php");
 		
 		$debit->addChild("transactionIndicator","SINGLE");
 
@@ -189,9 +198,14 @@ class DinersGW {
 
 		$preauthorize->addChild("amount",$data['amount']);
 		$preauthorize->addChild("currency",$data['currency']);
-		$preauthorize->addChild("successUrl",get_site_url(null,"/wp-content/plugins/woo-kreditnekartice-diners/bankart/return.php?id=" . $data['uniqid']));	
-		$preauthorize->addChild("cancelUrl",get_site_url(null,"/wp-content/plugins/woo-kreditnekartice-diners/bankart/return.php?id=" . $data['uniqid']));
-		$preauthorize->addChild("callbackUrl",get_site_url(null,"/wp-content/plugins/woo-kreditnekartice-diners/bankart/postback.php"));
+
+		// Derive from the plugin's own location so renaming the plugin folder
+		// can never orphan the bank's return/callback URLs.
+		$plugin_url = plugin_dir_url( __DIR__ );
+
+		$preauthorize->addChild("successUrl",$plugin_url . "bankart/return.php?id=" . $data['uniqid']);
+		$preauthorize->addChild("cancelUrl",$plugin_url . "bankart/return.php?id=" . $data['uniqid']);
+		$preauthorize->addChild("callbackUrl",$plugin_url . "bankart/postback.php");
 		
 
 		$dom = dom_import_simplexml($xml)->ownerDocument;

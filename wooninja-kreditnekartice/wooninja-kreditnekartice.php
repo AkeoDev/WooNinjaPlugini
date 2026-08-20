@@ -451,3 +451,27 @@ function sm_kreditne_custom_payment_update_order_meta( $order_id ) {
 }
 
 add_action( 'woocommerce_order_status_completed', 'woo_kreditnekartice_capture' );
+
+add_action( 'before_woocommerce_init', 'kreditnekartice_features_compatibility' );
+
+function kreditnekartice_features_compatibility() {
+
+	if ( class_exists( '\Automattic\WooCommerce\Utilities\FeaturesUtil' ) ) {
+
+		// HPOS: this plugin reads and writes orders through the CRUD layer only
+		// (wc_get_order / wc_get_orders / update_meta_data), so it is compatible.
+		\Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility(
+			'custom_order_tables',
+			__FILE__,
+			true
+		);
+
+		// Blocks: this plugin ships no Blocks payment method integration,
+		// so it is only available on the classic (shortcode) checkout.
+		\Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility(
+			'cart_checkout_blocks',
+			__FILE__,
+			false
+		);
+	}
+}

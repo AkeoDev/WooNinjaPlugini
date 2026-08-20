@@ -1,5 +1,8 @@
-<?php 
- //include_once ABSPATH . '/wp-content/plugins/lowestprice/lowest-price.php';
+<?php
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
  global $is_wc_active;
  create_table_lowestprice();
  if ( $is_wc_active == true) {
@@ -9,7 +12,7 @@
     }
  } else {
      // WooCommerce is NOT enabled!
-     echo '<div class="notice notice-error is-dismissible"><p>' . 'Za delovanje vtičnika <b>' . EDD_LOWEST_PRICE_ITEM_NAME . '</b>je potrebno imeti aktiviran Woocommerce'.'</p></div>';
+     echo '<div class="notice notice-error is-dismissible"><p>' . 'Za delovanje vtičnika <b>Najnižja cena</b> je potrebno imeti aktiviran Woocommerce' . '</p></div>';
  }
 ?>
 <h1>Najnižja cena v zadnjih 30 dneh (PID Direktiva)</h1>
